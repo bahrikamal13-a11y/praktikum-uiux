@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROFILE PAGE</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      display: flex;
+      justify-content: center;
+      padding: 30px 15px;
+    }
+
+    /* Container Utama menggunakan fieldset */
+    fieldset.outer-frame {
+      width: 100%;
+      max-width: 640px;
+      border: 1px solid #777777;
+      padding: 35px 25px 45px 25px;
+      background-color: #ffffff;
+    }
+
+    /* Legend untuk judul yang memotong border atas */
+    legend.page-title {
+      font-size: 13px;
+      color: #333333;
+      font-weight: normal;
+      padding: 0 8px;
+      margin-left: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Section Header Profile */
+    .profile-header {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 50px;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    /* Foto Profile Utama */
+    .photo-box-img {
+      width: 155px;
+      height: 155px;
+      border: 1px solid #666666;
+      object-fit: cover;
+      flex-shrink: 0;
+      background-color: #f0f0f0;
+    }
+
+    /* Info Profil */
+    .profile-info {
+      flex: 1;
+    }
+
+    .profile-info h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #222222;
+      margin-bottom: 12px;
+    }
+
+    .profile-info p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #333333;
+    }
+
+    .profile-info a {
+      color: #3b5998;
+      text-decoration: underline;
+    }
+
+    /* Section Deskripsi (2 Paragraf) */
+    .description-section {
+      margin-bottom: 50px;
+    }
+
+    .description-section p {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: #444444;
+      margin-bottom: 25px;
+      text-align: justify;
+    }
+
+    .description-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Section Multimedia Bottom Grid */
+    .bottom-grid {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    /* Element Video */
+    .video-box {
+      width: 36%;
+      flex-shrink: 0;
+    }
+
+    .video-box video {
+      width: 100%;
+      height: 125px;
+      background-color: #000000;
+      display: block;
+      border: 1px solid #777777;
+      object-fit: cover;
+    }
+
+    /* Element Foto Grid (4 Foto Kecil) */
+    .photo-grid {
+      width: 33%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .mini-photo-img {
+      width: 100%;
+      height: 58px;
+      border: 1px solid #666666;
+      object-fit: cover;
+      background-color: #f0f0f0;
+    }
+
+    /* Element Fieldset Attachments */
+    .attachments-box {
+      width: 31%;
+      border: 1px solid #666666;
+      padding: 8px 10px 12px 10px;
+      font-size: 11px;
+      min-height: 125px;
+    }
+
+    .attachments-box legend {
+      padding: 0 4px;
+      font-weight: bold;
+      color: #333333;
+      font-size: 11.5px;
+    }
+
+    .attachments-list {
+      list-style: none;
+      margin-top: 4px;
+    }
+
+    .attachments-list li {
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .attachments-list li::before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #888888;
+      background-color: #eeeeee;
+      flex-shrink: 0;
+    }
+
+    .attachments-list a {
+      color: #3b5998;
+      text-decoration: underline;
+      font-size: 10.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Container Utama dengan Legend -->
+  <fieldset class="outer-frame">
+    <legend class="page-title">PROFILE PAGE</legend>
+
+    <!-- Header Profil -->
+    <div class="profile-header">
+      <img src="assets/foto1.jpeg" alt="Foto Profil" class="photo-box-img">
+      
+      <div class="profile-info">
+        <h1>Profile Name</h1>
+        <p><strong>Nama:</strong> Bahri Kamal</p>
+        <p><strong>NIM:</strong> 0110226044</p>
+        <p><strong>Kelas:</strong> 1TI01 siang</p>
+        <p><strong>Email:</strong> <a href="mailto:bahrikamal13@gmail.com">bahrikamal13@gmail.com</a></p>
+        <p><strong>Telephone:</strong> 083894993228</p>
+      </div>
+    </div>
+
+    <!-- Deskripsi (2 Paragraf) -->
+    <div class="description-section">
+      <p>saya adalah seorang mahasiswa yang sedang menempuh pendidikan di sttnf prodi teknik informatika yang memiliki minat dalam dunia it dengan latar belakang yg blm memiliki pengalaman di bidang informatika tetapi saya senang belajar dan ingin berkembang dalam bidang ini. </p>
+    </div>
+
+    <!-- Bagian Bawah: Video, Koleksi Foto, dan Attachments -->
+    <div class="bottom-grid">
+      <!-- Player Video -->
+      <div class="video-box">
+        <video controls preload="metadata" video="praktikum03/assets/video.mp4">
+          <source src="assets/video.mp4" type="video/mp4">
+          Browser Anda tidak mendukung tag video.
+        </video>
+      </div>
+
+      <!-- Koleksi Foto (4 Foto Kecil) -->
+      <div class="photo-grid">
+        <img src="assets/DONOR DARAH - ISI 2.jpg" alt="Foto 1" class="mini-photo-img">
+        <img src="assets/DONOR DARAH - ISI 1.jpg" alt="Foto 2" class="mini-photo-img">
+        <img src="assets/DONOR DARAH - DOKUM.jpg" alt="Foto 3" class="mini-photo-img">
+        <img src="assets/DONOR DARAH - COVER.jpg" alt="Foto 4" class="mini-photo-img">
+      </div>
+
+      <!-- Lampiran File (Link Download untuk 4 Foto) -->
+      <fieldset class="attachments-box">
+        <legend>Attachments</legend>
+        <ul class="attachments-list">
+          <li><a href="assets/DONOR DARAH - ISI 2.jpg" download="DONOR_DARAH_ISI_2.jpg">Download Foto 1</a></li>
+          <li><a href="assets/DONOR DARAH - ISI 1.jpg" download="DONOR_DARAH_ISI_1.jpg">Download Foto 2</a></li>
+          <li><a href="assets/DONOR DARAH - DOKUM.jpg" download="DONOR_DARAH_DOKUM.jpg">Download Foto 3</a></li>
+          <li><a href="assets/DONOR DARAH - COVER.jpg" download="DONOR_DARAH_COVER.jpg">Download Foto 4</a></li>
+        </ul>
+      </fieldset>
+    </div>
+  </fieldset>
+
+</body>
+</html>
