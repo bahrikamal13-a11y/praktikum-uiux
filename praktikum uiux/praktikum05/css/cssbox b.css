@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.top-row, .middle-row {
+    display: flex;
+    gap: 15px;
+}
+
+.box-kuning, .box-oranye, .box-hijau, .box-abu, .box-cyan, .box-biru {
+    border: 1.5px solid #333333;
+}
+
+/* Baris Atas */
+.box-kuning {
+    background-color: #f4ea42;
+    width: 20%;
+    height: 75px;
+}
+
+.box-oranye {
+    background-color: #f46524;
+    flex: 1;
+    height: 75px;
+}
+
+/* Baris Tengah */
+.box-hijau {
+    background-color: #a8d68d;
+    width: 20%;
+    height: 400px;
+}
+
+.box-abu {
+    background-color: #d3d6d8;
+    flex: 1;
+    height: 400px;
+}
+
+.box-cyan {
+    background-color: #4dd0f1;
+    width: 20%;
+    height: 400px;
+}
+
+/* Baris Bawah */
+.box-biru {
+    background-color: #1c64f2;
+    width: 100%;
+    height: 75px;
+}

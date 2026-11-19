@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #ffc2cc; /* Pink muda */
+    width: 22%;
+    padding: 25px;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header, footer {
+    background-color: #ebe082; /* Kuning krem */
+    height: 18vh;
+    padding: 25px;
+}
+
+.content-area {
+    display: flex;
+    flex: 1;
+}
+
+article {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 25px;
+}
+
+aside {
+    background-color: #00ffff; /* Cyan */
+    width: 28%;
+    padding: 25px;
+}

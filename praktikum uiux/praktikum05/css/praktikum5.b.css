@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.container {
+    background-color: #ffb1b1; /* Pink salmon luar */
+    min-height: 100vh;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+header, footer {
+    background-color: #93cfc6; /* Tosca muda */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    gap: 25px;
+}
+
+aside {
+    background-color: #62b1b1; /* Tosca gelap */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color: #f97878; /* Merah coral */
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-group {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.img-box {
+    background-color: #d3d3d3; /* Abu-abu */
+    flex: 1;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

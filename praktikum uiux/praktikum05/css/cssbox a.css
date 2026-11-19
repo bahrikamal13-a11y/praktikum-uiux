@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container div {
+    border: 1.5px solid #333333;
+}
+
+/* Hilangkan border pada pembungkus baris */
+.container .row {
+    border: none;
+    display: flex;
+    gap: 35px;
+}
+
+.box-hijau {
+    background-color: #a8d68d;
+    height: 110px;
+    width: 100%;
+}
+
+.box-kuning {
+    background-color: #f4ea42;
+    width: 22%;
+    height: 170px;
+}
+
+.box-oranye {
+    background-color: #f46524;
+    flex: 1;
+    height: 170px;
+}
+
+.box-biru {
+    background-color: #4dd0f1;
+    flex: 1;
+    height: 170px;
+}
