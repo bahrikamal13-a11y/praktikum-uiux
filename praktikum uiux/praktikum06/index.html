@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>ini belajar js</h1>
+
+    <script>
+        // code js
+        
+        const name = 'bahri';
+        let umur = 18;
+        let nilai = 90;
+        let aktif = true;
+
+        console.log('name', name);
+        console.log('umur', umur);
+        console.log('nilai', nilai);
+        console.log('status', aktif);
+        console.log('tipe nilai', typeof nilai);
+    
+        // operator bilangan
+        const tugas = 100;
+        const uas = 80;
+        const uts = 95;
+        const akhir = tugas * 0.30 + uas * 0.30 + uts * 0.40;
+        console.log('nilai akhir', akhir);
+        console.log('lulus:', akhir >= 60);
+
+        // percabangan
+        const nilai2 = 90;
+        let kategori;
+        if (nilai2 >= 90) {
+            kategori = 'A';
+        } else if (nilai2 >= 80) {
+            kategori = 'B';
+        } else if (nilai2 >= 70) {
+            kategori = 'C';
+        } else if (nilai2 >= 60) {
+            kategori = 'D';
+        } else {
+            kategori = 'E';
+        }
+
+        console.log('nilai2:', nilai2);
+        console.log('kategori:', kategori);
+
+        // perulangan dan fungsi dasar
+        function hitungdiskon(harga, persen) {
+            return harga - (harga * persen / 100);  
+        }
+
+        for (let i = 1; i <= 3; i++) {
+            const harga = i * 10000;
+            const bayar = hitungdiskon(harga, 10);
+            console.log("barang", i, "harga:", harga, "bayar:", bayar);
+        }
+
+    </script>
+</body>
+</html>

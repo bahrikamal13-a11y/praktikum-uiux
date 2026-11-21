@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6 - Basic Javascript</title>
+</head>
+<body>
+    <script>
+        // Praktikum Mandiri Pengolah Nilai Mahasiswa
+        const nama = 'an bahri kamal';
+        const tugas = 100;
+        const uts = 80;
+        const uas = 90;
+
+        const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+
+        let status_kelulusan;
+        if (akhir >= 60) {
+            status_kelulusan = 'Lulus';
+        } else {
+            status_kelulusan = 'Tidak Lulus';
+        }
+
+        console.log('Nama:', nama);
+        console.log('Nilai Tugas:', tugas);
+        console.log('Nilai UTS:', uts);
+        console.log('Nilai UAS:', uas);
+        console.log('Nilai Akhir:', akhir);
+        console.log('Status Kelulusan:', status_kelulusan);
+    </script>
+    
+</body>
+</html>
